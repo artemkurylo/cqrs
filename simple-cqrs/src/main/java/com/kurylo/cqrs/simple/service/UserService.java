@@ -1,4 +1,4 @@
-package com.kurylo.cqrs.simple.projection;
+package com.kurylo.cqrs.simple.service;
 
 import java.util.List;
 
@@ -8,11 +8,11 @@ import com.kurylo.cqrs.simple.repository.UserQueryRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserProjection {
+public class UserService {
     private final UserQueryRepository userQueryRepository;
     private final UserQueryMapper userQueryMapper;
 
-    public UserProjection(UserQueryRepository userQueryRepository, UserQueryMapper userQueryMapper) {
+    public UserService(UserQueryRepository userQueryRepository, UserQueryMapper userQueryMapper) {
         this.userQueryRepository = userQueryRepository;
         this.userQueryMapper = userQueryMapper;
     }

@@ -3,6 +3,10 @@
 The main purpose of this application is to demonstrate how CQRS works
 and how it can be implemented in a simple way.
 
+Notice:
+- The application is not using two different storages (for dividing read/writes), it is just using a simple in-memory database 
+for ease of implementation.
+
 Demonstrated the difference between Commands and Queries.
 
 ### Uses the following technologies:
